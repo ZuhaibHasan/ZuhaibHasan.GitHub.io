@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
 
+  <!-- Optional: reduce caching issues (helps with GitHub Pages + browser cache) -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CHB0P7NDL"></script>
   <script>
@@ -54,7 +59,7 @@
   </div>
 </header>
 
-<section class="content">
+<section class="content content--summary">
   <h3>Summary</h3>
   <p class="section-subtitle">
     Delivery leader with 14+ years driving enterprise execution across data/BI workflows, regulated operations, and cross-functional program delivery.
@@ -62,7 +67,7 @@
   </p>
 </section>
 
-<section id="technical-history" class="content">
+<section id="technical-history" class="content content--tech">
   <h3>Technical History</h3>
   <p class="section-subtitle">
     Select programs demonstrating delivery leadership across data platforms, BI workflows, operational governance, and enterprise execution.
@@ -174,7 +179,16 @@
 </section>
 
 <footer>
-  <p>© Zuhaib Hasan</p>
+  <div class="footer-inner">
+    <span>© Zuhaib Hasan</span>
+
+    <!-- Tiny on-page visit counter (works on static sites). This is NOT GA; it's a badge counter. -->
+    <img
+      class="visit-badge"
+      alt="Visits"
+      src="https://visitorbadge.io/api/visitors?path=zuhaibhasan.github.io&label=Visits&countColor=%2378aaff"
+    />
+  </div>
 </footer>
 
 </body>
