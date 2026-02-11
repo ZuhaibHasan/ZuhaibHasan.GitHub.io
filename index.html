@@ -1,33 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7CHB0P7NDL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7CHB0P7NDL');
-</script>
-
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Zuhaib (Zee) Hasan | Director Technical Program Management</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CHB0P7NDL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7CHB0P7NDL');
+  </script>
+
+  <!-- Simple click tracking -->
+  <script>
+    function trackClick(action, label) {
+      if (typeof gtag === "function") {
+        gtag('event', action, {
+          event_category: 'engagement',
+          event_label: label
+        });
+      }
+    }
+  </script>
 </head>
 
 <body>
 
 <header class="hero">
   <div class="overlay"></div>
+
   <div class="hero-content">
     <h1>Zuhaib <span>(Zee)</span> Hasan</h1>
     <h2>Director, Technical Program Management</h2>
-    <p>Greater New York City Area & New Jersey</p>
+    <p>Greater New York City Area &amp; New Jersey</p>
 
     <div class="links">
-      <a href="https://www.linkedin.com/in/zuhaibhasan/" target="_blank">LinkedIn</a>
-      <a href="mailto:Zuhaib.Hasan.9@gmail.com">Email</a>
-      <a href="Zuhaib-Hasan-Resume.pdf" target="_blank">Resume</a>
-      <a href="#technical-history">Technical History
+      <a href="https://www.linkedin.com/in/zuhaibhasan/" target="_blank" rel="noopener"
+         onclick="trackClick('linkedin_click','LinkedIn')">LinkedIn</a>
+
+      <a href="mailto:Zuhaib.Hasan.9@gmail.com"
+         onclick="trackClick('email_click','Email')">Email</a>
+
+      <a href="Zuhaib-Hasan-Resume.pdf" target="_blank" rel="noopener"
+         onclick="trackClick('resume_click','Resume PDF')">Resume</a>
+
+      <a href="#technical-history"
+         onclick="trackClick('technical_history_click','Technical History')">Technical History</a>
+    </div>
+  </div>
+</header>
+
+<section class="content">
+  <h3>Summary</h3>
+  <p class="section-subtitle">
+    Delivery leader with 14+ years driving enterprise execution across data/BI workflows, regulated operations, and cross-functional program delivery.
+    Known for turning ambiguous priorities into roadmaps, measurable outcomes, and predictable execution.
+  </p>
+</section>
+
+<section id="technical-history" class="content">
+  <h3>Technical History</h3>
+  <p class="section-subtitle">
+    Select programs demonstrating delivery leadership across data platforms, BI workflows, operational governance, and enterprise execution.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h4>Big Data Pipeline Optimization (2023–2024) — TRANZACT</h4>
+      <p>Modernized reconciliation pipelines using Databricks and Airflow to improve reliability, throughput, and reporting readiness across Medicare Advantage operations.</p>
+      <ul>
+        <li>Improved pipeline orchestration and monitoring to reduce manual intervention</li>
+        <li>Strengthened data quality via validation checkpoints and exception handling</li>
+        <li>Increased reporting readiness with tighter run transparency and governance</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Commission Reconciliation &amp; Audit Framework (2022) — TRANZACT</h4>
+      <p>Built an audit-ready workflow to manage commission discrepancies with traceability from intake through resolution during high-volume audit windows.</p>
+      <ul>
+        <li>Standardized triage and resolution lifecycle with clearer accountability</li>
+        <li>Improved leadership visibility into aging items, blockers, and progress</li>
+        <li>Reduced rework by tightening intake clarity and acceptance criteria</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Jira / Delivery Operating Model Transformation (2021) — TRANZACT</h4>
+      <p>Implemented a standardized Kanban operating model across Finance-domain teams to improve flow, prioritization clarity, and portfolio reporting.</p>
+      <ul>
+        <li>Reduced intake ambiguity using consistent epics, workflow states, and rules</li>
+        <li>Strengthened reporting via cleaner categorization and operational metrics</li>
+        <li>Improved predictability with capacity visibility and execution governance</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Medicare DTC Delivery Leadership (Multi-Year) — TRANZACT</h4>
+      <p>Led cross-functional delivery across Medicare DTC operations spanning data, compliance-sensitive workflows, and operational automation.</p>
+      <ul>
+        <li>Drove roadmap alignment across Finance, Data, Compliance, and Engineering</li>
+        <li>Maintained operational cadence + executive updates to keep work on track</li>
+        <li>Balanced strategic initiatives with KTLO via disciplined intake control</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Enterprise QA, Test Strategy &amp; Release Readiness — Cignium</h4>
+      <p>Directed QA strategy and release readiness across enterprise client environments, strengthening quality gates and production confidence.</p>
+      <ul>
+        <li>Reduced production risk via regression discipline and go/no-go readiness</li>
+        <li>Improved predictability using standardized test plans and reporting</li>
+        <li>Tightened “definition of done” to reduce late-cycle churn</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Release Management &amp; Production Governance — Cignium</h4>
+      <p>Built release governance aligning dependencies, schedules, and readiness criteria for enterprise deployments.</p>
+      <ul>
+        <li>Improved deployment stability through dependency and readiness management</li>
+        <li>Reduced incident impact via better comms, rollback plans, and triage</li>
+        <li>Standardized cadence and stakeholder updates for predictable releases</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>DIRECTV Professional Services — Client Delivery (Cignium)</h4>
+      <p>Led client-facing delivery for DIRECTV Professional Services, managing scope, timeline, and execution across technical and customer stakeholders.</p>
+      <ul>
+        <li>Improved outcomes with crisp requirements, change control, and risk mgmt</li>
+        <li>Aligned stakeholders through structured status reporting and tracking</li>
+        <li>Delivered predictably under shifting priorities and constraints</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Production Support, Incident Triage &amp; Backlog Governance — Cignium</h4>
+      <p>Owned incident triage workflows and defect backlog governance to maintain service stability and execution focus.</p>
+      <ul>
+        <li>Reduced ambiguity in urgent issues with clear ownership and decision paths</li>
+        <li>Improved responsiveness through structured prioritization and comms</li>
+        <li>Kept teams focused on highest-impact work via backlog discipline</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Agile Enablement &amp; Execution Discipline — TRANZACT + Cignium</h4>
+      <p>Enabled pragmatic Scrum/Kanban execution improving flow, planning accuracy, and cross-functional delivery.</p>
+      <ul>
+        <li>Improved consistency via readiness standards and intake clarity</li>
+        <li>Reduced friction by tightening handoffs across teams</li>
+        <li>Increased transparency through cadence + lightweight metrics</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Enterprise Portfolio Delivery (Regulated / Compliance-Sensitive) — Cignium</h4>
+      <p>Managed enterprise initiatives in compliance-sensitive environments with governance rigor and measurable execution outcomes.</p>
+      <ul>
+        <li>Delivered predictability through structured risk management and comms</li>
+        <li>Improved confidence with traceability and progress transparency</li>
+        <li>Sustained delivery under constraints via prioritization and escalation</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© Zuhaib Hasan</p>
+</footer>
+
+</body>
+</html>
